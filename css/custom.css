@@ -1,0 +1,122 @@
+
+
+   
+li:hover, li:active {
+    background:transparent !important;
+}
+
+
+    p, a {
+    font-family: futura-pt, sans-serif;
+    letter-spacing: 3px;
+    
+    }
+
+    h1  {
+        font-family: futura-pt, sans-serif;
+        letter-spacing: 5px;
+        font-weight:600;
+        font-size: 150px;  
+         text-shadow: 8px 8px #1373A8;
+        color:whitesmoke;
+    }
+
+    h2 {
+        font-family: futura-pt, sans-serif;
+        letter-spacing: 5px;
+        font-weight:600;
+        font-size: 80px;  
+        text-shadow: 8px 8px #1373A8;
+        color:whitesmoke;
+    }
+
+    h3  {
+        font-family: futura-pt, sans-serif;
+        letter-spacing: 3px;
+        font-weight:700;
+        color:whitesmoke;
+    }
+
+    button {
+      display:  inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      font-weight:400;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      letter-spacing: 2px;
+      outline: none;
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      box-shadow: 0 9px #999;
+      font-weight: 600;
+      background-color: #3FA9F5;
+    }
+
+
+     button.navbar-btn-home {
+    background-color: #3FA9F5;
+        }
+
+     button.navbar-btn-mood {
+    background-color:#E1556E;
+        }
+     button.navbar-btn-about {
+
+        }
+     button.navbar-btn-login {
+
+        }
+
+    button:hover {
+        background-color: #3e8e41;
+    }
+
+    button:active {
+      box-shadow: 0 1000px #666;
+      transform: translateY(4px);
+    }
+
+    button.navbar-btn-home:hover {
+        background-color: #3e8e41;
+    }
+
+    button.navbar-btn-home:active {
+      box-shadow: 0 1000px #666;
+      transform: translateY(4px);
+    }
+
+    button.navbar-btn-mood:hover {
+        background-color: #FFC7D0;
+    }
+
+    button.navbar-btn-mood:active {
+      box-shadow: 0 1000px #666;
+      transform: translateY(4px);
+    }
+
+
+    body.home {
+    background: url("soothe.gif") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover -100;
+
+    }
+
+    body.mood {
+    background-color: #FF8F98;
+    }
+
+    body.about {
+    background-color: #6AB78D;
+    }
+
+    body.login {
+    background-color: #F0A077;
+    }
+
+
