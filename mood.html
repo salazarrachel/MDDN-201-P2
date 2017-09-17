@@ -9,20 +9,20 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <! JQuery and Bootstrap Script -->
+        <!-- JQuery,Bootstrap, Javascript Script -->
         
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             
-        
+            <script type ="text/javascript" src="script.js"></script>
           
-        <! Typekit Font Script -->
+        <!-- Typekit Font Script -->
         
             <script src="https://use.typekit.net/vqt8jam.js"></script>
             <script>try{Typekit.load({ async: true });}catch(e){}</script>
         
         
-         <! Link to Stylesheet -->
+         <!-- Link to Stylesheet -->
   
             <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="css/custom.css">
@@ -31,30 +31,61 @@
         
     </head>
     
-    <body class="mood">       
+    <body class="mood">  
+    <div class="container-fluid">     
             <nav class="navbar-default">
-                <div class="container-fluid">
+                
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">Soothe</a>
+                        <a class="navbar-brand" href="index.html">soothe</a>
                     </div>
                     
                  <ul class="nav navbar-nav navbar-right">
                      <li> <a href="index.html"><button class="navbar-btn-mood">home</button></a></li>
                       <li> <a href="mood.html"><button class="navbar-btn-mood">mood</button></a></li>
-                      <li> <a href="about.html"><button class="navbar-btn-mood">about</button></a> </li>
-                      <li> <a href="login.html"><button class="navbar-btn-mood">login</button></a> </li>
+                      <li> <a href="about.html"><button class="navbar-btn-mood">about</button></a></li>
+                      <li> <a href="login.html"><button class="navbar-btn-mood">login</button></a></li>
+
                  </ul>
                      
                 </div>
             </nav>
 
             
-<div class="container-fluid text-center">    
+<div id="page1" class="jumbotron vertical-center">    
+<div class="container">  
     
-      
-            
+ <h1>scan</h1>
+    <h3>scan your mood and find your emotions</h3> <br>
+ <button class="mood-btn"onclick="clickpage2()">begin</button>
+ </div>
+
+
+</div> 
+        
+<div id="page2" class="jumbotron vertical-center">   
+<div class="container">  
+    
+     <div id="loader" class="loader"></div>
 </div>
-            
+
+
+</div>
+        
+<div id="page3" class="jumbotron vertical-center">   
+<div class="container">  
+
+    <h3>your scanned mood is:</h3> <br>
+    <h1>stressed</h1>
+
+    
+
+</div>
+
+</div>
+        
+    
+    
+     
             
             
             
@@ -65,5 +96,6 @@
             
             
     </body>
+    </div>
     
 </html>

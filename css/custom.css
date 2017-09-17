@@ -1,23 +1,30 @@
-
-
-   
-li:hover, li:active {
-    background:transparent !important;
-}
-
+    li:hover, li:active {
+        background:transparent !important;
+    }
 
     p, a {
     font-family: futura-pt, sans-serif;
-    letter-spacing: 3px;
-    
+    letter-spacing: 2px;
+    color:white;
+    font-weight:600;
+        font-size: 30px;  
     }
 
-    h1  {
+    .jumbotron h1  {
         font-family: futura-pt, sans-serif;
         letter-spacing: 5px;
         font-weight:600;
         font-size: 150px;  
-         text-shadow: 8px 8px #1373A8;
+        text-shadow: 8px 8px #1373A8;
+        color:whitesmoke;
+    }
+
+      .mood h1 {
+        font-family: futura-pt, sans-serif;
+        letter-spacing: 5px;
+        font-weight:600;
+        font-size: 150px;  
+        text-shadow: 8px 8px #e57567;
         color:whitesmoke;
     }
 
@@ -55,36 +62,42 @@ li:hover, li:active {
       background-color: #3FA9F5;
     }
 
+        button.mood-btn {
+      background-color: #ff8f98;
+
+    }
+
 
      button.navbar-btn-home {
     background-color: #3FA9F5;
         }
 
      button.navbar-btn-mood {
-    background-color:#E1556E;
+    background-color:#e57567;
         }
      button.navbar-btn-about {
 
         }
      button.navbar-btn-login {
-
+      background-color:#F2C86B;
         }
 
-    button:hover {
-        background-color: #3e8e41;
+    button: hover {
+        background-color: #1373A8;
     }
 
-    button:active {
-      box-shadow: 0 1000px #666;
+    button: active {
+      box-shadow: 5 5px #666;
       transform: translateY(4px);
-    }
+
+    } 
 
     button.navbar-btn-home:hover {
-        background-color: #3e8e41;
+        background-color: #1373A8;
     }
 
     button.navbar-btn-home:active {
-      box-shadow: 0 1000px #666;
+      box-shadow: 5, 5px #666;
       transform: translateY(4px);
     }
 
@@ -93,8 +106,24 @@ li:hover, li:active {
     }
 
     button.navbar-btn-mood:active {
-      box-shadow: 0 1000px #666;
+      box-shadow: 5 5px #666;
       transform: translateY(4px);
+    }
+
+    button.navbar-btn-login:hover {
+        background-color: #D88D6C;
+    }
+
+    button.navbar-btn-login:active {
+      box-shadow: 5 5px #666;
+      transform: translateY(4px);
+    }
+
+
+   .container {
+   width:1025px;
+   height:600px;
+
     }
 
 
@@ -103,12 +132,15 @@ li:hover, li:active {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover -100;
-
+      background-size: cover;
     }
 
     body.mood {
-    background-color: #FF8F98;
+   background: url("mood.png") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: 100% 100%;
     }
 
     body.about {
@@ -116,7 +148,74 @@ li:hover, li:active {
     }
 
     body.login {
-    background-color: #F0A077;
+    background: url("login.gif") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size:100% 100%;
     }
 
+    .vertical-center {
+    text-align: center; 
+    position: absolute;
+    background:transparent;
+    display: flex;
+    align-items:center;
+    }
+
+    .jumbotron {
+    color: inherit;
+    background-color: transparent;
+    height:100%;
+    width:100%;
+}
+
+  .navbar-brand {
+      color: white !important ;
+  }
+
+    #page1 {
+    display: flex; 
+    text-align: center; 
+    position: absolute;
+    background:transparent;
+    display:flex;
+    align-items:center; 
+
+    }
+
+     #page2 {
+     /* keep display*/
+    padding-top:500px;
+    display: none;
+    text-align: center; 
+    position: absolute;
+    background:transparent;
+    align-items:center;
+    }
+
+    #page3 {
+      /* keep display*/
+    padding-top:400px;
+    display: none;
+    text-align: center; 
+    position: absolute;
+    background:transparent;
+    align-items:center;
+    }
+
+  #loader {
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+      margin:0 auto;
+      display:block;
+  }
+
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
 
